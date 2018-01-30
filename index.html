@@ -53,8 +53,9 @@
               <p>Announced in:</p>
               <p class="h1 text-shadow font-weight-light text-primary">February 15, 2018</p>
             </div>
-            <button class="btn btn-primary wow fadeIn">Join White List</button>
-            <button class="btn btn-secondary wow fadeIn">Why Invest</button>
+            <button type="button" class="btn btn-primary wow fadeIn" data-toggle="modal" data-target="#modalWhiteList">Join White List</button>
+
+            <!-- <button class="btn btn-secondary wow fadeIn">Why Invest</button> -->
           </div>
 
         </div>
@@ -83,7 +84,8 @@
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TU8Z-SDuEUs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               </div>
             </div>
-            <button class="btn btn-default wow fadeInUp">Join White List</button>
+            <button class="btn btn-default wow fadeInUp" type="button" data-toggle="modal" data-target="#modalWhiteList">Join White List</button>
+
           </div>
         </div>
       </div>
@@ -184,7 +186,7 @@
             </div>
             <!--  -->
             <div class="row mt-3">
-              <div class="col-2 text-right text-primary"><img class="wow fadeIn img-fluid" src="./assets/images/icon-trust.png" alt=""></div>
+              <div class="col-2 text-right text-primary"><img class="wow fadeIn img-fluid" src="./assets/images/img-tqcoin.png" alt=""></div>
               <div class="col-10">
                 <p class="lead mb-1 wow fadeIn" data-wow-delay=".5s">Trust Quotient</p>
                 <small class="text-muted">Measures an individual’s professional trustworthiness via a continuously updated score based on verified evidence.</small>
@@ -275,12 +277,67 @@
         <div class="row">
           <div class="col">
             <h2 class="font-weight-light mb-5">HOW IT WORKS?</h2>
-            <div class="col-md-8 offset-md-2">
-              <div class="embed-responsive embed-responsive-16by9 rounded">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TU8Z-SDuEUs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="col">
+              <div class="card-group text-dark">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Get Certified</h5>
+                    <p><strong class="h5">TQ</strong> = Amount of Skill</p>
+                    <div class="row mt-5">
+                      <div class="col-5">
+                        <img class="img-fluid" style="opacity:.5" src="./assets/images/icon-skill-no.png" alt="">
+                        <p class="mt-2"><strong class="h5">0</strong> TQ</p>
+                      </div>
+                      <div class="col-2">
+                        <p class="mt-5 h3 wow fadeIn"><i class="fa fa-chevron-right"></i></p>
+                      </div>
+                      <div class="col-5">
+                        <img class="img-fluid wow fadeInLeft" data-wow-delay=".2s" src="./assets/images/icon-skill-yes.png" alt="">
+                        <p class="mt-2"><strong class="h5">65</strong> TQ</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <p>Improve your Skills and get Certified</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Grow Visibility</h5>
+                    <img class="w-75 wow fadeIn" data-wow-delay=".7s" src="./assets/images/app-preview.png" alt="">
+                  </div>
+                  <div class="card-footer">
+                    <p>Share your Professional Passport</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Get Hired and <span class="text-primary">Paid</span> on Our Platform</h5>
+                    <img class="img-fluid wow fadeInLeft" data-wow-delay="1s" src="./assets/images/get-hired.png" alt="">
+                  </div>
+                </div>
               </div>
+              <!-- <div class="card text-dark">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                      <p>Share your Professional Passport</p>
+                      <p>Or</p>
+                      <p>Get hired on Tiiqu</p>
+                    </div>
+                  </div>
+                </div> -->
+              <!-- </div> -->
+              <!-- <div class="embed-responsive embed-responsive-16by9 rounded">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TU8Z-SDuEUs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div> -->
             </div>
-            <button class="btn btn-warning mt-3">Join White List</button>
+            <button class="btn btn-warning mt-3" type="button" data-toggle="modal" data-target="#modalWhiteList">Join White List</button>
           </div>
         </div>
       </div>
@@ -304,6 +361,8 @@
         </div>
       </div>
     </section>
+
+
     <!--  -->
     <section class="bg-info py-5 bg-work text-white">
       <div class="container">
@@ -326,14 +385,15 @@
             </div>
           </div>
           <div class="col text-center">
-            <div class="row">
-              <div class="col">
-                <img src="./assets/images/coins.png" alt="">
+            <div class="row my-5">
+              <div class="col-4 offset-4">
+                <img src="./assets/images/img-tqcoin.png" class="img-fluid wow zoomIn" alt="">
               </div>
             </div>
             <div class="row">
               <div class="col">
-                <button class="btn btn-primary">Join the Whitelist</button>
+                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modalWhiteList">Join the Whitelist</button>
+
                 <button class="btn btn-secondary">See Whitepaper</button>
               </div>
             </div>
@@ -360,6 +420,22 @@
               <li><small>30% to 50% of weekly time spent on slef-promotion.</small></li>
               <li><small>Payment unsecurity</small></li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="py-5 text-center bg-info">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h2 class="font-weight-light mb-5 text-white">ROADMAP</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <iframe width="100%" height="400" src="https://time.graphics/embed?v=1&id=53618" frameborder="0" allowfullscreen></iframe>
+            <!-- <div><a href="https://time.graphics" style="font-size: 12px; text-decoration:none; " title="Timeline">Timeline</a></div> -->
           </div>
         </div>
       </div>
@@ -409,6 +485,36 @@
             <p class="font-weight-light mt-3 mb-1 wow fadeIn" data-wow-delay=".3s">ROB MOYA</p>
             <p class="text-muted wow fadeIn mb-1" data-wow-delay=".5s"><small>UI/FRONT END</small></p>
             <p><a href="https://www.linkedin.com/in/robmoya/" target=_blank><i class="fa fa-linkedin"></i></a></p>
+          </div>
+          <div class="col-6  col-md-3 mb-4">
+            <img src="./assets/images/photo-aleksandar.jpg" class="wow fadeIn rounded-circle w-25" alt="">
+            <p class="font-weight-light mt-3 mb-1 wow fadeIn" data-wow-delay=".3s">ALEKSANDAR DJORDJEVIC </p>
+            <p class="text-muted wow fadeIn mb-1" data-wow-delay=".5s"><small>FRONTEND ETHEREUM DEVELOPER</small></p>
+            <p><a href="https://www.linkedin.com/in/deejayelly/" target=_blank><i class="fa fa-linkedin"></i></a></p>
+          </div>
+          <div class="col-6  col-md-3 mb-4">
+            <img src="./assets/images/photo-kristof-leroux.png" class="wow fadeIn rounded-circle w-25" alt="">
+            <p class="font-weight-light mt-3 mb-1 wow fadeIn" data-wow-delay=".3s">KRISTOF LEROUX</p>
+            <p class="text-muted wow fadeIn mb-1" data-wow-delay=".5s"><small>BACKEND DEVELOPER</small></p>
+            <p><a href="https://www.linkedin.com/in/kristofleroux/" target=_blank><i class="fa fa-linkedin"></i></a></p>
+          </div>
+          <div class="col-6  col-md-3 mb-4">
+            <img src="./assets/images/photo-michael-richardson.jpg" class="wow fadeIn rounded-circle w-25" alt="">
+            <p class="font-weight-light mt-3 mb-1 wow fadeIn" data-wow-delay=".3s">Michael Richardson</p>
+            <p class="text-muted wow fadeIn mb-1" data-wow-delay=".5s"><small>PROJECT MANAGER</small></p>
+            <p><a href="https://www.linkedin.com/in/michaelowenrich/" target=_blank><i class="fa fa-linkedin"></i></a></p>
+          </div>
+          <div class="col-6  col-md-3 mb-4">
+            <img src="./assets/images/photo-michael-richardson.jpg" class="wow fadeIn rounded-circle w-25" alt="">
+            <p class="font-weight-light mt-3 mb-1 wow fadeIn" data-wow-delay=".3s">ASHWIN TAYSON</p>
+            <p class="text-muted wow fadeIn mb-1" data-wow-delay=".5s"><small>Jr DEVELOPER</small></p>
+            <p><a href="https://www.linkedin.com/in/ashwin-a-260aa981/" target=_blank><i class="fa fa-linkedin"></i></a></p>
+          </div>
+          <div class="col-6  col-md-3 mb-4">
+            <img src="./assets/images/photo-bogdan-fiedur.jpg" class="wow fadeIn rounded-circle w-25" alt="">
+            <p class="font-weight-light mt-3 mb-1 wow fadeIn" data-wow-delay=".3s">BOGDAN FIEDUR</p>
+            <p class="text-muted wow fadeIn mb-1" data-wow-delay=".5s"><small>BLOCKCHAIN ADVISOR</small></p>
+            <p><a href="https://www.linkedin.com/in/bogdanfiedur/" target=_blank><i class="fa fa-linkedin"></i></a></p>
           </div>
           <div class="col-6  col-md-3 mb-4">
             <img src="./assets/images/photo-doug-freeman.jpg" class="wow fadeIn rounded-circle w-25" alt="">
@@ -478,6 +584,30 @@
         </div>
       </div>
     </footer>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalWhiteList" tabindex="-1" role="dialog" aria-labelledby="modalWhiteListTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content bg-gradient-primary">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pb-5 text-center">
+        <h2 class="modal-title text-white text-shadow font-weight-light display-4 mb-2" id="exampleModalLongTitle">Join the Whitelist</h2>
+        <form class="form-inline justify-content-center my-5">
+          <label class="sr-only" for="inlineFormInputEmail">Email</label>
+          <input type="text" class="w-50 form-control mb-2 mr-sm-2" id="inlineFormInputEmail" placeholder="Email">
+          <button type="submit" class="w-25 btn btn-dark mb-2">JOIN NOW</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
